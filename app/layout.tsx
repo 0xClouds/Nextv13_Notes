@@ -1,18 +1,23 @@
-import './globals.css'
+/* eslint-disable @next/next/no-head-element */
+import Link from "next/link";
+import "./global.css";
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      {/*
-        <head /> will contain the components returned by the nearest parent
-        head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
-      */}
-      <head />
-      <body>{children}</body>
+    <html>
+      <head></head>
+      <body>
+        <nav>
+          Im a Nav Bar ->
+          <Link href="/">Home</Link>
+          <Link href="/notes">Notes</Link>
+        </nav>
+        {children}
+      </body>
     </html>
-  )
+  );
 }

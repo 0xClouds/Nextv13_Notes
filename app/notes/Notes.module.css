@@ -1,0 +1,31 @@
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.notesContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: cetner;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.note {
+  flex: 1;
+  text-align: center;
+  background: gray;
+  box-shadow: 5px 5px black;
+  max-width: 200px;
+  height: 200px;
+  flex-basis: 50%;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin-top: 10rem;
+}
